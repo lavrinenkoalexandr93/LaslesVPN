@@ -1,0 +1,82 @@
+// main: ../main.less
+
+
+.intro-title {
+    margin-top: 6.25rem;
+    margin-bottom: 2rem;
+
+    color: @black;
+    font-size: 3.125rem;
+    font-weight: 700;
+
+    @media @mobile {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+    }
+}
+
+.btn-intro {
+    margin-top: 3.1rem;
+    padding: 1.1rem 4.84rem;
+    border-radius: 1rem;
+    box-shadow: 3px 6px 4px -2px @red;
+
+     &:active {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.intro-pic {
+    margin-top: 5.5rem;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.col-intro {
+   &+.col-intro {
+       border-left: 1px solid @gray;
+
+       
+   }
+}
+
+.stat {
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+
+      
+
+}
+
+.intro-item {
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+
+    @media @mobile {
+        text-align: center;
+        img {
+            display: none;
+        }
+    }
+    
+    
+
+    .intro-item_inner {
+        display: block;
+        
+        margin-left: 1.5rem;
+        margin-top: .3rem;
+
+        @media @mobile-sm {
+            margin-left: 0;
+        }
+    }
+}
+

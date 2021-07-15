@@ -1,0 +1,130 @@
+// main: ../main.less
+
+.plan {
+    background-color: #F6F6F6;
+}
+
+
+
+.plan-item {
+    display: inline-flex;
+    flex-direction: column;    
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    
+    padding: 4.37rem;
+    border: 2px solid @gray;
+    border-radius: 1rem;
+
+    @media @tablet {
+        padding: 1.37rem;
+    }
+
+    @media @mobile {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .plan-item-img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @media @mobile {
+            padding: 3rem;
+        }
+
+        @media @mobile-sm {
+            padding: 0;
+        }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+
+                
+            }
+        text-align: center;
+    }
+
+    .plan-name {
+        margin: 1.8rem 0;
+        text-align: center;
+        color: @black;
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    .bonus-list {
+        
+        list-style: none;
+        margin-bottom: 2rem;
+
+        @media @tablet {
+            margin-left: -2rem;
+        }
+        
+                
+        li {
+            font-size: .875rem;
+            margin-bottom: 1.6rem;
+            background: url("..//../assets/img/plans/check.png") no-repeat;
+            padding-left: 3rem;
+
+            @media @tablet {
+                
+                padding-left: 2rem;
+                margin-bottom: .6rem;
+
+            }
+        }
+    }
+
+    .plan-price {
+        margin-bottom: 2rem;
+        text-align: center;
+        color: @black;
+        font-size: 1.5625rem;
+        font-weight: 700;
+
+    }
+
+    .plan-select {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: @red;
+        font-size: 1rem;
+        font-weight: bold;
+
+        padding: .8rem 1.93rem;
+        border: 2px solid @red;
+        border-radius: 2rem;
+
+        transition: all .2s linear;
+
+        &:hover {
+            background: @red;
+            color: @white;
+        }
+
+       
+
+        
+    }
+
+    &:hover {
+        border-color: @red;
+    }
+
+    .plan-footer {
+       
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+        
+}
+
+
+        
+
